@@ -12,6 +12,16 @@ Wilfred is a simple [boilerplate](https://en.wikipedia.org/wiki/Boilerplate_code
 
 `npm install -g wilfred`
 
+**Optional:**
+
+To use autocompletion on Wilfred, add the following lines to your ~/.bash_profile or ~/.zshrc.
+
+```bash 
+if [ -f $(npm root -g)/wilfred/autocomplete/wilfred-completion.bash ]; then
+    . $(npm root -g)/wilfred/autocomplete/wilfred-completion.bash
+fi
+```
+
 ## Usage
 
 For more information on how to use wilfred run `wilfred --help`
@@ -21,11 +31,10 @@ For more information on how to use wilfred run `wilfred --help`
 - [x] Local folders
 - [x] Interactive and non-interactive mode<sup>[1](#footnote1)</sup>
 - [x] `.wilfredhook` for running commands after copy
+- [x] Bash autocomplete
 - [ ] GitHub support
 - [ ] `.wilfredignore` for files to ignore during copy (maybe?)
-- [ ] Bash autocomplete
 
-<sub><sup><a name="footnote1">1</a>: If you pass in the boilerplate name as argument it will run non-interactive. If you don't it will run in interactive mode.</sup></sub>
 
 ## Changelog
 
